@@ -108,7 +108,6 @@
             "version": "==0.4.5"
         },
         "coverage": {
-            "extras": [],
             "hashes": [
                 "sha256:01778769097dbd705a24e221f42be885c544bb91251747a8a3efdec6eb4788f2",
                 "sha256:08002f9251f51afdcc5e3adf5d5d66bb490ae893d9e21359b085f0e03390a820",
