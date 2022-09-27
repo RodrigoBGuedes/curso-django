@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,79 +17,108 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/scripts.js' %}"></script>
 
-  </head>
-  <body>
+</head>
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">
 
-      </ul>
+        </ul>
     </div>
 </nav>
 
-    <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
-				<h2>
-					Curso de Python
-				</h2>
-				<p>
-					Confira em breve mais informações sobre curso ministrado pelo autor do livro:
-                    <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank"> Python Fluent</a>.
-				</p>
-			</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h2>
+                    Curso de Python
+                </h2>
+                <h4 class="mt-4">Entre na fila de espera</h4>
+
+                <form action="https://herokuapp.us12.list-manage.com/subscribe/post?u=6f81c0af2d9424ae5b2bad556&amp;id=d31a622b48&amp;f_id=00eb0ae0f0"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      class="form-row align-items-center" target="_blank" novalidate>
+                    <div class="form-row align-items-center">
+                        <div class="col-auto float-start me-3">
+                            <label class="sr-only" for="mce-EMAIL">Email</label>
+                            <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL"
+                                   placeholder="exemplo@email.com">
+                        </div>
+                        <div class="col-auto float-start me-3">
+                            <label class="sr-only" for="mce-FNAME">Nome</label>
+                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME"
+                                   placeholder="Seu Nome">
+                        </div>
+
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                  name="b_6f81c0af2d9424ae5b2bad556_d31a622b48"
+                                                                                                  tabindex="-1"
+                                                                                                  value=""></div>
+
+                        <div class="col-auto pt-4">
+                            <input type="submit" value="Salvar" name="subscribe" id="mc-embedded-subscribe"
+                                   class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-md-12 mt-2">
+            <div class="card">
+                <h5 class="card-header">
+                    Mais detalhes sobre o Instrutor
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        <img src="{% static 'img/rodrigo_guedes2.png' %}" class="img-thumbnail float-left me-3"
+                             alt="Foto do Rodrigo"/>
+                        Rodrigo sou eu, estagiário da proxion se liga nesse livro:
+                        <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">
+                            Python Fluent</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							Mais detalhes sobre o Instrutor
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								<img src="{% static 'img/rodrigo_guedes2.png' %}" class="img-thumbnail float-left me-3"
-                                     alt="Foto do Rodrigo"/>
-                                Rodrigo sou eu, estagiário da proxion
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    </div>
+</div>
 
-  <footer class="main-footer mt-5 pt-4 text-light">
-      <div class="container">
-          <div class="row">
-              <div class="col">
-                  <h3>Entre em Contato</h3>
-                  <address>
-                      +55 12 98156-7397
-                      <br/>
-                      <a href="rodrigobuenoguedes@gmail.com" class="text-light">rodrigobuenoguedes@gmail.com</a>
-                  </address>
-              </div>
-          </div>
-      </div>
-      <div class="rights pb-4">
-          <div class="container">
-              <div class="row">
-                  <div class="col">
-                      {% now 'Y' %} Python Pro. Todos os direitos reservados
-                  </div>
-              </div>
-          </div>
-      </div>
+<footer class="main-footer mt-5 pt-4 text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Entre em Contato</h3>
+                <address>
+                    +55 12 98156-7397
+                    <br/>
+                    <a href="rodrigobuenoguedes@gmail.com" class="text-light">rodrigobuenoguedes@gmail.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="rights pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% now 'Y' %} Python Pro. Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+    </div>
 
-  </footer>
+</footer>
 
-  </body>
+</body>
 </html>
