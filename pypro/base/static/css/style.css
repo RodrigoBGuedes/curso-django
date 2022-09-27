@@ -5,3 +5,11 @@
 .rights{
     background-color: #405920;
 }
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    background-color: #d3d6d9;
+    border-radius: 0.3rem;
+}
