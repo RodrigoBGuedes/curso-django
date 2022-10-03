@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "588c2d5948cfbb9a9ddf6987c88b8903dcea12b7d6b39fef616b82d89365158b"
+            "sha256": "91f2ad44835b293c6009c90798203de817445d843e1a7244e7905a300a71ad6f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -118,6 +118,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==1.0.1"
+        },
+        "model-bakery": {
+            "hashes": [
+                "sha256:70bc7da3864c28bacfbaaa3f3b0b52020dedc8fec5229a195fc39a4dfa5ec20d",
+                "sha256:9e7e7436174a69892972eb6717a877ac346d70a8a2ada4fd2b583bb3dca2ad7e"
+            ],
+            "index": "pypi",
+            "version": "==1.7.0"
         },
         "psycopg2-binary": {
             "hashes": [

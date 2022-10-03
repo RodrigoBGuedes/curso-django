@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from pypro.modulos import facade
 
-def detalhe(resquest, slug):
-    pass
+
+def detalhe(request, slug):
+    modulo = facade.encontrar_modulo(slug)
+    render(request, 'modulos/modulo_detalhe.html', {'modulo': modulo})
