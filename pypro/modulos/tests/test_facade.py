@@ -1,7 +1,7 @@
 import pytest
 
-from pypro.modulos import facade
 from model_mommy import mommy
+from pypro.modulos import facade
 
 from pypro.modulos.models import Modulo
 
